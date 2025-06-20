@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Travel blog</title>
+</head>
+<body>
+<header><h1>Gallery</h1></header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinstions</a></li>
+<li><a href="Tips.html">Tips</a></li>
+<li><a class="active" href="gallery.html">Gallery</a></li>
+<li><a href="booking.html">Booling</a></li>
+<li><a href="about.html">About Me</a></li>
+</ul>
+</nav>
+<main><center><p>Check out below for the image sildeshow of Fuzhou landmarks.</p><center>
+<img class="mySildes" src="Images/autumn.jpg" >
+<img class="mySildes" src="Images/spring.jpg" >
+<img class="mySildes" src="Images/summer-night.jpg" >
+<img class="mySildes" src="Images/winter.jpg" >
+</main>
+<script>
+var slideIndex = 0;
+show();
+
+function show(){
+var i;
+var x = document.getElementsByClassName("mySildes");
+for (i = 0; i < x.length;i++){
+x[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > x.length){
+slideIndex = 1
+}
+x[slideIndex-1].style.display = "block";
+setTimeout(show,2500);// Change image every 2500 milliseconds
+}
+</script>
+<footer><p>&copy;2025 Kyla's Blog</p></footer>
+</body>
+</html>

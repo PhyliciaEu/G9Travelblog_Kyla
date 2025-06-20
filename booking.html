@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<header><h1>Booking Form</h1></header>
+<body>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="tips.html">Tips</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a class="active" href="booking.html">Booking</a></li>
+<li><a href="about.html">About Me</a></li>
+</ul>
+</nav>
+<center><form id=myform>
+<fieldset>
+<legend> Step 1: Tourist Information </legend>
+Full name:<input type="text" name="fname" >
+<br><br>
+Email: <input name="email" type="email" placeholder="example@rkcshz.cn" required>
+<br><br>
+Phone: <input type="tel" name="phone" placeholder="+86" required>
+<br><br>
+Nationality: <input type="text">
+<br><br>
+</fieldset><br/>
+<fieldset>
+<legend> Step 2: Tour Details </legend>
+Tour Date: <input type="date">
+<br><br>
+Group Size: <input type="text">
+<br><br>
+Tour Duration: <input type
+<br><br>
+Preferred Language: 
+<input type="radio" name="language" value="mandarin">
+Mandarin
+<input type="radio" name="language" value="english">
+English
+<br><br>
+</fieldset><br/>
+<fieldset>
+<legend> Step 3: Places to Visit </legend>
+Select attractions:<br>
+<input type="checkbox" name="place" value="Sanfang Qixiang">Sanfang Qixiang<br>
+<input type="checkbox" name="place" value="Jinshan Temple">Jinshan Temple<br>
+<input type="checkbox" name="place" value="West Lake Park">West Lake Park<br>
+<input type="checkbox" name="place" value="Pingtan Island">Pingtan Island<br>
+<br><br>
+Special Requests:<br>
+<textarea name="requests" cols=30 rows=8 required></textarea>
+<br>
+</fieldset>
+</center>
+<input type="submit" value="Submit" >
+</form>
+<footer><p>&copy;2025 Kyla's Blog</p></footer>
+</body>
+</html>
